@@ -1,0 +1,1 @@
+\copy (select table_catalog as database_name, table_schema as schema_name, table_name, column_name as field_name, data_type from information_schema.columns where table_schema not in ('pg_catalog', 'information_schema')) to '/Users/kbrendle/go/src/mast/db_meta/pagila.csv' with csv header

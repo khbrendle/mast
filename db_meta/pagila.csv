@@ -1,0 +1,166 @@
+database_name,schema_name,table_name,field_name,data_type
+pagila,public,customer,store_id,smallint
+pagila,public,customer,first_name,text
+pagila,public,customer,last_name,text
+pagila,public,customer,email,text
+pagila,public,customer,address_id,smallint
+pagila,public,customer,active,integer
+pagila,public,customer,customer_id,integer
+pagila,public,customer,activebool,boolean
+pagila,public,customer,create_date,date
+pagila,public,customer,last_update,timestamp with time zone
+pagila,public,actor,first_name,text
+pagila,public,actor,last_name,text
+pagila,public,actor,actor_id,integer
+pagila,public,actor,last_update,timestamp with time zone
+pagila,public,category,name,text
+pagila,public,category,category_id,integer
+pagila,public,category,last_update,timestamp with time zone
+pagila,public,film,title,text
+pagila,public,film,description,text
+pagila,public,film,release_year,integer
+pagila,public,film,language_id,smallint
+pagila,public,film,original_language_id,smallint
+pagila,public,film,length,smallint
+pagila,public,film,special_features,ARRAY
+pagila,public,film,fulltext,tsvector
+pagila,public,film,film_id,integer
+pagila,public,film,rental_duration,smallint
+pagila,public,film,rental_rate,numeric
+pagila,public,film,replacement_cost,numeric
+pagila,public,film,rating,USER-DEFINED
+pagila,public,film,last_update,timestamp with time zone
+pagila,public,film_actor,actor_id,smallint
+pagila,public,film_actor,film_id,smallint
+pagila,public,film_actor,last_update,timestamp with time zone
+pagila,public,film_category,film_id,smallint
+pagila,public,film_category,category_id,smallint
+pagila,public,film_category,last_update,timestamp with time zone
+pagila,public,actor_info,actor_id,integer
+pagila,public,actor_info,first_name,text
+pagila,public,actor_info,last_name,text
+pagila,public,actor_info,film_info,text
+pagila,public,address,address,text
+pagila,public,address,address2,text
+pagila,public,address,district,text
+pagila,public,address,city_id,smallint
+pagila,public,address,postal_code,text
+pagila,public,address,phone,text
+pagila,public,address,address_id,integer
+pagila,public,address,last_update,timestamp with time zone
+pagila,public,city,city,text
+pagila,public,city,country_id,smallint
+pagila,public,city,city_id,integer
+pagila,public,city,last_update,timestamp with time zone
+pagila,public,country,country,text
+pagila,public,country,country_id,integer
+pagila,public,country,last_update,timestamp with time zone
+pagila,public,customer_list,id,integer
+pagila,public,customer_list,name,text
+pagila,public,customer_list,address,text
+pagila,public,customer_list,zip code,text
+pagila,public,customer_list,phone,text
+pagila,public,customer_list,city,text
+pagila,public,customer_list,country,text
+pagila,public,customer_list,notes,text
+pagila,public,customer_list,sid,smallint
+pagila,public,film_list,fid,integer
+pagila,public,film_list,title,text
+pagila,public,film_list,description,text
+pagila,public,film_list,category,text
+pagila,public,film_list,price,numeric
+pagila,public,film_list,length,smallint
+pagila,public,film_list,rating,USER-DEFINED
+pagila,public,film_list,actors,text
+pagila,public,inventory,film_id,smallint
+pagila,public,inventory,store_id,smallint
+pagila,public,inventory,inventory_id,integer
+pagila,public,inventory,last_update,timestamp with time zone
+pagila,public,language,name,character
+pagila,public,language,language_id,integer
+pagila,public,language,last_update,timestamp with time zone
+pagila,public,nicer_but_slower_film_list,fid,integer
+pagila,public,nicer_but_slower_film_list,title,text
+pagila,public,nicer_but_slower_film_list,description,text
+pagila,public,nicer_but_slower_film_list,category,text
+pagila,public,nicer_but_slower_film_list,price,numeric
+pagila,public,nicer_but_slower_film_list,length,smallint
+pagila,public,nicer_but_slower_film_list,rating,USER-DEFINED
+pagila,public,nicer_but_slower_film_list,actors,text
+pagila,public,payment,customer_id,smallint
+pagila,public,payment,staff_id,smallint
+pagila,public,payment,rental_id,integer
+pagila,public,payment,amount,numeric
+pagila,public,payment,payment_date,timestamp with time zone
+pagila,public,payment,payment_id,integer
+pagila,public,payment_p2017_01,customer_id,smallint
+pagila,public,payment_p2017_01,staff_id,smallint
+pagila,public,payment_p2017_01,rental_id,integer
+pagila,public,payment_p2017_01,amount,numeric
+pagila,public,payment_p2017_01,payment_date,timestamp with time zone
+pagila,public,payment_p2017_01,payment_id,integer
+pagila,public,payment_p2017_02,customer_id,smallint
+pagila,public,payment_p2017_02,staff_id,smallint
+pagila,public,payment_p2017_02,rental_id,integer
+pagila,public,payment_p2017_02,amount,numeric
+pagila,public,payment_p2017_02,payment_date,timestamp with time zone
+pagila,public,payment_p2017_02,payment_id,integer
+pagila,public,payment_p2017_03,customer_id,smallint
+pagila,public,payment_p2017_03,staff_id,smallint
+pagila,public,payment_p2017_03,rental_id,integer
+pagila,public,payment_p2017_03,amount,numeric
+pagila,public,payment_p2017_03,payment_date,timestamp with time zone
+pagila,public,payment_p2017_03,payment_id,integer
+pagila,public,payment_p2017_04,customer_id,smallint
+pagila,public,payment_p2017_04,staff_id,smallint
+pagila,public,payment_p2017_04,rental_id,integer
+pagila,public,payment_p2017_04,amount,numeric
+pagila,public,payment_p2017_04,payment_date,timestamp with time zone
+pagila,public,payment_p2017_04,payment_id,integer
+pagila,public,payment_p2017_05,customer_id,smallint
+pagila,public,payment_p2017_05,staff_id,smallint
+pagila,public,payment_p2017_05,rental_id,integer
+pagila,public,payment_p2017_05,amount,numeric
+pagila,public,payment_p2017_05,payment_date,timestamp with time zone
+pagila,public,payment_p2017_05,payment_id,integer
+pagila,public,payment_p2017_06,customer_id,smallint
+pagila,public,payment_p2017_06,staff_id,smallint
+pagila,public,payment_p2017_06,rental_id,integer
+pagila,public,payment_p2017_06,amount,numeric
+pagila,public,payment_p2017_06,payment_date,timestamp with time zone
+pagila,public,payment_p2017_06,payment_id,integer
+pagila,public,rental,rental_date,timestamp with time zone
+pagila,public,rental,inventory_id,integer
+pagila,public,rental,customer_id,smallint
+pagila,public,rental,return_date,timestamp with time zone
+pagila,public,rental,staff_id,smallint
+pagila,public,rental,rental_id,integer
+pagila,public,rental,last_update,timestamp with time zone
+pagila,public,sales_by_film_category,category,text
+pagila,public,sales_by_film_category,total_sales,numeric
+pagila,public,staff,first_name,text
+pagila,public,staff,last_name,text
+pagila,public,staff,address_id,smallint
+pagila,public,staff,email,text
+pagila,public,staff,store_id,smallint
+pagila,public,staff,username,text
+pagila,public,staff,password,text
+pagila,public,staff,picture,bytea
+pagila,public,staff,staff_id,integer
+pagila,public,staff,active,boolean
+pagila,public,staff,last_update,timestamp with time zone
+pagila,public,store,manager_staff_id,smallint
+pagila,public,store,address_id,smallint
+pagila,public,store,store_id,integer
+pagila,public,store,last_update,timestamp with time zone
+pagila,public,sales_by_store,store,text
+pagila,public,sales_by_store,manager,text
+pagila,public,sales_by_store,total_sales,numeric
+pagila,public,staff_list,id,integer
+pagila,public,staff_list,name,text
+pagila,public,staff_list,address,text
+pagila,public,staff_list,zip code,text
+pagila,public,staff_list,phone,text
+pagila,public,staff_list,city,text
+pagila,public,staff_list,country,text
+pagila,public,staff_list,sid,smallint
